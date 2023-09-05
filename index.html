@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f299281d5e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+   
+    <div id="header">
+        <div class="container">
+            <nav>
+               <div class="logo" style="font-size: 60px;"><span style="color: rgb(238, 91, 115); ">B</span>himashankar.</div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" id="i1" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" id="i2" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Bhimashankar </span><br> From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+    
+                    <img src="images/user1.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        "Hello, I'm Bhimashankar. I hold a Bachelor's degree in Electrical Engineering from WCE Sangli
+                        with a CGPA of 8.
+                        I have a strong background in Java, C++, HTML, CSS, JavaScript, and expertise in Spring and
+                        Spring Boot.
+                        I completed my SDE internship at Persistent Systems Limited
+                        and am excited to discuss how my skills and experience align with the opportunities at your
+                        company."
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Java Devepoler</span><br>Backend using java and Spring Framework</li>
+                            <li><span>Github</span><br>To handle the project using this tool</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019-2023 Electrical Engineering </span><br>From WCE Sangli <br>CGPA:8.0</li>
+                            <li><span>2018-2019 HSC</span><br>Yeshwant Mahavidyalaya,Nanded<br>Perc:66.30</li>
+                            <li><span>2016-2017 SSC</span><br>Z P High School,Malakoli<br>Perc:80.0</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Jan 2023:May 2023 Internship</span><br>
+                                Persistent Systems Limited<br>
+                                SDE Internship:<br>
+                                Frontend:HTML,CSS <br>
+                                Backend:C++,Java and Spring Framework<br>
+                                ProjectHandling:Github<br>
+                                All this completed with practice on their platform
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -----------------Services------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>
+                        UI/UX design, which involves the creation of user
+                        interfaces and user experiences, is a crucial aspect
+                        of web development. Here's a brief description of UI/UX
+                        design in the context of using HTML, CSS, and JavaScript.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Java Developer</h2>
+                    <p>
+                        A Java developer who specializes in using the Spring 
+                        Framework is a skilled professional who focuses on creating
+                         robust and efficient Java applications. Here's a description
+                          of a Java developer with expertise in the Spring Framework.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>C/C++ Developer</h2>
+                    <p>
+                        C/C++ developer is a software professional who specializes in programming with
+                         the C and C++ programming languages. These developers are known for their
+                          ability to create high-performance, efficient, and system-level software.
+                         Here's a description of a C/C++ developer.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ------------Portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>the app connects you to talented people around the world
+                        Download it from play store.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>the app connects you to talented people around the world
+                        Download it from play store.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Online shopping App</h3>
+                    <p>the app connects you to talented people around the world
+                        Download it from play store.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- ----------------------contact------------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+             <h1 class="sub-title">Contact Me</h1>
+             <p><i class="fa-solid fa-paper-plane"></i>bhimashankarwad@gmail.com</p>
+             <p><i class="fa-solid fa-square-phone"></i>9960612478</p>
+             <div class="social-icons">
+                <a href="https://instagram.com/akash_wadkar_01/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/Bhimashankar01"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/bhimashankar-wadkar-b29322224/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/bhima-4907"><i class="fa-brands fa-github"></i></a>
+             </div>
+             <a href="./images/my-cv.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                 <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                 </form>
+                 <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-solid fa-copyright"></i> Bhima <i class="fa-solid fa-heart" id="love"></i> Made With Html,CSS,JavaScript</p>
+    </div>
+</div>
+
+<script >
+    
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxPFW07EaYi_FWLqGcqPcHK8sww-W8uzUfZmnmFTxVFPgO0f3zquiwBBc6izGkAQTx8qg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {msg.innerHTML="Message send successfully!"
+    setTimeout(function(){
+        msg.innerHTML=""
+    },5000)
+    form.reset()
+})
+        .catch(error => console.error('Error!', error.message))
+    })
+
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+
+
+
+// <!-- -----------this script when we using mobile 
+//                        this site nedd to 
+//              be work ok to show menus we use this--- -->
+            
+                var sidemenu=document.getElementById('sidemenu');
+
+                function openmenu(){
+                    sidemenu.style.right="0";
+                }
+                function closemenu(){
+                    sidemenu.style.right="-200px";
+                }
+           
+</script>
+
+
+</body>
+
+</html>
